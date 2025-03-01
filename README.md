@@ -19,14 +19,14 @@ Projet de gestion d'une animalerie utilisant **Spring Boot**, **JPA**, et **Hibe
 - **Postman** pour tester les requêtes  
 
 💾 Configurer sa BDD 
-- ** Bien penser à changer le fichier "application.properties" pour correspondre à l'adresse de votre BDD
+- Bien penser à changer le fichier "application.properties" pour correspondre à l'adresse de votre BDD
 
 Les adresses avec lesquelles faire ses requêtes GET/POST sur POSTMAN :
 
 
-- ** http://localhost:8080/api/petstores
-- ** http://localhost:8080/api/animals
-- ** http://localhost:8080/api/petstores/{id}/animals
+- http://localhost:8080/api/petstores
+- http://localhost:8080/api/animals
+- http://localhost:8080/api/petstores/{id}/animals
 
 ## ⚙️ Installation
 1. **Cloner le projet** :
