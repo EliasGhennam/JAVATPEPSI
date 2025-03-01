@@ -1,12 +1,18 @@
 package com.petstore.controller;
 
+import com.petstore.model.Animal;
+import jakarta.persistence.*;
+
 import com.petstore.model.PetStore;
 import com.petstore.service.PetStoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.transaction.annotation.Transactional;
 
-        import java.util.List;
+import java.util.List;
 import java.util.Optional;
+import java.util.Collections;
+
 
 @RestController
 @RequestMapping("/api/petstores")
@@ -14,6 +20,13 @@ public class PetStoreController {
 
     @Autowired
     private PetStoreService petStoreService;
+
+    @Transactional
+    @GetMapping("/{id}/animals")
+    public List<Animal> getAnimalsByPetStore(@PathVariable Long id) {
+        Optional<PetStore> petStore = Optional.ofNullable(petStoreService.findById(id));
+        return petStore.map(PetStore::getAnimals).orElse(Collections.emptyList());
+    }
 
     @GetMapping
     public List<PetStore> getAllPetStores() {

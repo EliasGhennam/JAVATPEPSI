@@ -8,13 +8,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Fish extends Animal {
-    @Enumerated(EnumType.STRING)
-    private FishLivEnv livingEnv;
+    private String livingEnv;
 }
-
-
-/*
-public class fish extends animal {
-    private string watertype;
-}
- */
