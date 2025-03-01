@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/animals") // 📌 Assure-toi que ça correspond à ton URL
+@RequestMapping("/api/animals")
 public class AnimalController {
 
     @Autowired
