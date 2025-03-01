@@ -1,4 +1,6 @@
-🏪 PetStore API
+GHENNAM Elias 2025
+
+🏪 TP PetStore API
 
 📌 Description
 Projet de gestion d'une animalerie utilisant **Spring Boot**, **JPA**, et **Hibernate**. Ce projet suit les bonnes pratiques **multi-couches** et respecte les consignes du TP de modélisation JPA.
