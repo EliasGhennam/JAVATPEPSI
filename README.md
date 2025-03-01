@@ -16,7 +16,8 @@ Projet de gestion d'une animalerie utilisant **Spring Boot**, **JPA**, et **Hibe
 - **Spring Boot 3.4.3**  
 - **JPA / Hibernate**  
 - **MariaDB**  
-- **Postman** pour tester les requêtes  
+- **Postman** pour tester les requêtes
+- ChatGPT (Debuggage et un peu tout 😅)
 
 💾 Configurer sa BDD 
 - Bien penser à changer le fichier "application.properties" pour correspondre à l'adresse de votre BDD
